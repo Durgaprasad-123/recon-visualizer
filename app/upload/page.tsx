@@ -17,19 +17,18 @@ export default function UploadPage() {
     const res = await fetch("/api/upload", { method: "POST", body: form });
     const data = await res.json();
 
-    // Store in localStorage to pass to results page
     localStorage.setItem("reconData", JSON.stringify(data));
     router.push("/results");
   };
 
   return (
-    <div className="flex flex-col items-center p-10">
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <h1 className="text-4xl font-bold mb-6">Recon Visualizer</h1>
       <input
         type="file"
         accept=".zip"
         onChange={(e) => setFile(e.target.files?.[0] || null)}
-        className="mb-4 p-2 border rounded w-80"
+        className="mb-4 p-2 rounded border w-80 bg-gray-800 border-gray-700"
       />
       <button
         onClick={uploadZip}

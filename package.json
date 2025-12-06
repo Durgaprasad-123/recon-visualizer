@@ -16,5 +16,10 @@
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.27",
     "@radix-ui/react-tabs": "^1.0.9"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "@types/react": "^18.2.15",
+    "@types/node": "^20.5.1"
   }
 }

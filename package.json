@@ -1,4 +1,3 @@
-
 {
   "name": "recon-visualizer",
   "version": "1.0.0",
@@ -9,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "jszip": "^4.1.0",
+    "jszip": "^3.10.1",
     "next": "14.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
